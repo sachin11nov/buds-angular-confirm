@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+  integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="buds-confirm/buds-confirm.css">
+
+</head><body class="container-fluid">
+
+
+<div ng-controller="MyController as myModel">
+    myModel {{myModel}}
+    <button ng-click="myModel.testConfirm()"> Test confirm</button>
+</div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="buds-confirm/buds-confirm.js"></script>
+<script src="app.js"></script>
+
+</html>

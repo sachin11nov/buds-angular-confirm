@@ -1,0 +1,61 @@
+/*Notification center*/
+.buds-notification-container {
+  position: fixed;
+  border: 4px solid #000;
+  border-bottom: none;
+  background: #fff;
+  max-width: 320px;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+.buds-notification-container.is-visible {
+  opacity: 1;
+}
+.buds-notification-container.bottom-right {
+  bottom: 40px;
+  right: 5px;
+}
+.buds-notification-container .buds-notification-close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 0;
+  text-align: center;
+  cursor: pointer;
+}
+.buds-notification-container .buds-notification-close .buds-svg {
+  fill: #F1F1F1;
+  width: 12px;
+  height: 12px;
+}
+
+
+/* Directive stylesheet begins here */
+buds-confirmation {
+  display: none !important;
+}
+
+.buds-confirmation-panel {
+  padding: 15px 25px 15px 15px;
+}
+.buds-confirmation-panel .buds-confirmation-head {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.buds-confirmation-panel .buds-confirmation-buttons {
+  margin-top: 10px;
+}
+.buds-confirmation-panel .btn-confirmation {
+  background-color: #FFF;
+  border: none;
+  padding: 5px 18px 5px 18px;
+}
+.buds-confirmation-panel .btn-confirmation-cancel {
+  border: none;
+  padding: 5px 18px 5px 18px;
+}
+.buds-confirmation-panel .btn-confirmation-cancel:hover {
+  color: #000;
+}

@@ -1,0 +1,8 @@
+<div class="buds-confirmation-panel">
+  <div class="buds-confirmation-head">{{vm.title || "Please confirm your action"}}</div>
+  <div class="buds-confirmation-details">{{vm.content}}</div>
+  <div class="buds-confirmation-buttons text-right">
+      <button class="btn btn-default btn-confirmation" ng-click="vm.ok()">{{vm.okCaption || "Ok"}}</button>
+      <button class="btn btn-confirmation-cancel" ng-click="vm.cancel()">{{vm.cancelCaption || "Cancel"}}</button>
+  </div>
+</div>
